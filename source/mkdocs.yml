@@ -1,5 +1,6 @@
-site_name: Islam Azaizia Portfolio
-site_author: Islam Azaizia
+site_name: Islam Azaizia Portfolio - Python Programming
+site_description: Official portfolio of Islam Azaizia showcasing Python laboratory works and programming projects.
+site_url: https://islemAZ360.github.io/
 
 theme:
   name: material
