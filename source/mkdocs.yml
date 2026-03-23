@@ -4,6 +4,8 @@ site_url: https://islemAZ360.github.io/
 
 theme:
   name: material
+  features:
+    - content.code.copy
   palette:
     - scheme: default
       primary: indigo
