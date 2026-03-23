@@ -1,0 +1,28 @@
+site_name: Islam Azaizia Portfolio
+site_author: Islam Azaizia
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+nav:
+  - Home: index.md
+  - About the Author: about.md
+  - Laboratory Works:
+      - Template: labs/template.md
+      - Lab 1: labs/lab1.md
+      - Lab 2: labs/lab2.md
+      - Lab 3: labs/lab3.md
+      - Lab 4: labs/lab4.md
