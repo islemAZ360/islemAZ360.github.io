@@ -1,0 +1,205 @@
+/* =========================================
+   1. المتغيرات والألوان (Variables & Colors)
+   ========================================= */
+:root {
+  --primary-color: #2563eb; /* أزرق احترافي */
+  --primary-hover: #1d4ed8;
+  --bg-card: #ffffff;
+  --border-color: #e5e7eb;
+  --text-main: #111827;
+  --text-muted: #6b7280;
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --card-shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+[data-md-color-scheme="slate"] {
+  --primary-color: #3b82f6;
+  --primary-hover: #60a5fa;
+  --bg-card: #1e293b;
+  --border-color: #334155;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  --card-shadow-hover: 0 20px 25px -5px rgba(0, 0, 0, 0.7);
+}
+
+/* =========================================
+   2. الصفحة الرئيسية - قسم الترحيب (Hero Section)
+   ========================================= */
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 4rem 0;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 3rem !important;
+  font-weight: 800 !important;
+  line-height: 1.2 !important;
+  color: var(--text-main);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.025em;
+}
+
+.hero-title span {
+  color: var(--primary-color);
+}
+
+.hero-subtitle {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* إعدادات الصورة الشخصية */
+.hero-image-container {
+  flex-shrink: 0;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  padding: 6px;
+  background: linear-gradient(135deg, var(--border-color), var(--primary-color));
+  box-shadow: var(--card-shadow);
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: var(--bg-card);
+  border: 4px solid var(--bg-card);
+}
+
+/* الأزرار */
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-pro {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none !important;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white !important;
+  box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-main) !important;
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  border-color: var(--text-muted);
+  background-color: rgba(0,0,0,0.03);
+}
+
+/* =========================================
+   3. بطاقات المشاريع (Project Cards)
+   ========================================= */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.project-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--card-shadow-hover);
+  border-color: var(--primary-color);
+}
+
+/* حل مشكلة الأيقونات - ستظهر بألوانها الحقيقية داخل مربع أنيق */
+.project-icon-wrapper {
+  width: 55px;
+  height: 55px;
+  background-color: rgba(37, 99, 235, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+[data-md-color-scheme="slate"] .project-icon-wrapper {
+  background-color: rgba(59, 130, 246, 0.15);
+}
+
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.75rem;
+}
+
+.project-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.tech-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  background-color: rgba(107, 114, 128, 0.1);
+  color: var(--text-muted);
+}
+
+/* التجاوب مع الهواتف (Responsive) */
+@media (max-width: 768px) {
+  .hero-wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-buttons {
+    justify-content: center;
+  }
+}
