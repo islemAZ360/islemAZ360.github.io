@@ -1,28 +1,90 @@
-site_name: Islam Azaizia Portfolio - Python Programming
+site_name: Islam Azaizia Portfolio
 site_description: Official portfolio of Islam Azaizia showcasing Python laboratory works and programming projects.
 site_url: https://islemAZ360.github.io/
 
 theme:
   name: material
+  # Настройки профессионального интерфейса (إعدادات الواجهة الاحترافية)
   features:
+    - navigation.tabs          
+    - navigation.instant       
+    - navigation.top           
+    - navigation.tracking
+    - search.suggest           
+    - search.highlight         
+    - search.share
     - content.code.copy
+    - content.code.annotate
+    - toc.integrate            # دمج الفهرس في القائمة الجانبية
+  
+  # Цветовая палитра (لوحة الألوان الأساسية)
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: teal
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-night
         name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: teal
       toggle:
-        icon: material/brightness-4
+        icon: material/weather-sunny
         name: Switch to light mode
+
+  font:
+    text: Roboto
+    code: Fira Code
+
+extra_css:
+  - stylesheets/extra.css
+
+# Максимальное количество расширений Markdown (أكبر عدد من إضافات الماركداون)
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 nav:
   - Home: index.md
-  - About the Author: about.md
+  - Projects & About: about.md
   - Laboratory Works:
       - Template: labs/template.md
       - Lab 1: labs/lab1.md
