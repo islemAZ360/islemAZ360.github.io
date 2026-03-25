@@ -16,13 +16,7 @@ hide:
   </div>
   
   <div class="hero-image-container">
-    <!-- 
-      كيف تضيف صورتك الحقيقية؟
-      1. اذهب إلى مجلد docs
-      2. أنشئ مجلداً جديداً وسمّه: assets
-      3. ضع صورتك داخل مجلد assets وسمّها: profile.jpg
-      (إذا لم تضع صورة، سيقوم الكود تلقائياً بوضع دائرة زرقاء احترافية تحتوي على أول حرفين من اسمك)
-    -->
+
     <img src="assets/profile.jpg" alt="Islam Azaizia" class="hero-image" onerror="this.src='https://ui-avatars.com/api/?name=Islam+Azaizia&background=2563eb&color=fff&size=280&font-size=0.33'">
   </div>
 </div>
