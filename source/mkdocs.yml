@@ -4,7 +4,7 @@ site_url: https://islemAZ360.github.io/
 
 theme:
   name: material
-  # Настройки профессионального интерфейса (إعدادات الواجهة الاحترافية)
+  # Настройки профессионального интерфейса 
   features:
     - navigation.tabs          
     - navigation.instant       
@@ -15,9 +15,9 @@ theme:
     - search.share
     - content.code.copy
     - content.code.annotate
-    - toc.integrate            # دمج الفهرس في القائمة الجانبية
+    - toc.integrate            
   
-  # Цветовая палитра (لوحة الألوان الأساسية)
+  # Цветовая палитра 
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -41,7 +41,7 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
-# Максимальное количество расширений Markdown (أكبر عدد من إضافات الماركداون)
+# Максимальное количество расширений Markdown 
 markdown_extensions:
   - abbr
   - admonition

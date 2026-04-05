@@ -1,8 +1,8 @@
 /* =========================================
-   1. المتغيرات والألوان (Variables & Colors)
+   (Variables & Colors)
    ========================================= */
 :root {
-  --primary-color: #2563eb; /* أزرق احترافي */
+  --primary-color: #2563eb; 
   --primary-hover: #1d4ed8;
   --bg-card: #ffffff;
   --border-color: #e5e7eb;
@@ -24,7 +24,7 @@
 }
 
 /* =========================================
-   2. الصفحة الرئيسية - قسم الترحيب (Hero Section)
+  (Hero Section)
    ========================================= */
 .hero-wrapper {
   display: flex;
@@ -60,7 +60,7 @@
   margin-bottom: 2rem;
 }
 
-/* إعدادات الصورة الشخصية */
+
 .hero-image-container {
   flex-shrink: 0;
   width: 260px;
@@ -118,7 +118,7 @@
 }
 
 /* =========================================
-   3. بطاقات المشاريع (Project Cards)
+   (Project Cards)
    ========================================= */
 .projects-grid {
   display: grid;
@@ -144,7 +144,7 @@
   border-color: var(--primary-color);
 }
 
-/* حل مشكلة الأيقونات - ستظهر بألوانها الحقيقية داخل مربع أنيق */
+
 .project-icon-wrapper {
   width: 55px;
   height: 55px;
@@ -193,7 +193,7 @@
   color: var(--text-muted);
 }
 
-/* التجاوب مع الهواتف (Responsive) */
+
 @media (max-width: 768px) {
   .hero-wrapper {
     flex-direction: column-reverse;
