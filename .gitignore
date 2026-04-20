@@ -1,8 +1,14 @@
-node_modules/
-build/
-dist/
-coverage/
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# MkDocs build output
+source/site/
+
+# OS
 .DS_Store
+Thumbs.db
+
+# Logs
 *.log
-.env*
-!.env.example
